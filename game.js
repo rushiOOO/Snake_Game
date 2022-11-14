@@ -249,25 +249,4 @@ var Snake = (function () {
       stop: function () {
         clearInterval(intervalID);
       },
-  
-      setup: {
-        keyboard: function (state) {
-          if (state) {
-            document.addEventListener('keydown', keyPush);
-          } else {
-            document.removeEventListener('keydown', keyPush);
-          }
-        },
-        wall: function (state) {
-          walls = state;
-        },
-        tileCount: function (size) {
-          tileCount = size;
-          gridSize = 400 / tileCount;
-        },
-        fixedTail: function (state) {
-          fixedTail = state;
-        }
-      },
-  
-     
+ 
